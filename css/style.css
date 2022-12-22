@@ -4,3 +4,29 @@
     box-sizing: border-box;
 }
 
+body{
+    color: black;
+    
+}
+
+:root{
+    --color-iris: rgba(77, 90, 229, 1);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    list-style: none;
+}
+
+.contacts li :hover, .menu li :hover{
+    color: var(--color-iris);
+}
+
+
+.logo span{
+    color: var(--color-iris);
+}
