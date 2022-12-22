@@ -11,12 +11,14 @@ body{
     color: black;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-
+    letter-spacing: 0.02em;
+    font-weight: 400;
 }
 
 :root{
     --color-iris: rgba(77, 90, 229, 1);
     --color-navyblue: rgba(46, 47, 66, 1);
+    --color-white: rgba(255, 255, 255, 1);
 }
 
 a{
@@ -28,36 +30,63 @@ li{
     list-style: none;
 }
 
+h1{
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 60px;  
+}
+
+h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 24px;  
+}
+
+h3{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;  
+}
+
+.logo{
+    font-weight: 900;
+}
 .logo span{
     color: var(--color-iris);
+}
+
+.menu{
+    font-weight: 600;
 }
 
 .contacts li :hover, .menu li :hover{
     color: var(--color-iris);
 }
 
-.menu{
-    display: flex;
-}
 
 .hero{
     background-color: var(--color-navyblue);
-    color: white;
+    color: var(--color-white);
     height: 603px;
     text-align: center;
 }
 
-
 .order-service-btn{
     background-color: var(--color-iris);
     border: none;
-    color: white;
+    color: var(--color-white);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     width: 170px;
     height: 51px;
     border-radius: 4px;
     font-weight: 600;
     font-size: 16px;
-    letter-spacing: 4%;
+    letter-spacing: 0.04em;
     cursor: pointer;
+}
+
+.advantages p{
+    width: 264px;
+    height: 104px;
 }
 
