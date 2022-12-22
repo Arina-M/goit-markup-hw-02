@@ -19,6 +19,8 @@ body{
     --color-iris: rgba(77, 90, 229, 1);
     --color-navyblue: rgba(46, 47, 66, 1);
     --color-white: rgba(255, 255, 255, 1);
+    --color-cloud: rgba(244, 244, 253, 1);
+    --color-cornflower: rgba(231, 233, 252, 1);
 }
 
 a{
@@ -90,3 +92,22 @@ h3{
     height: 104px;
 }
 
+.our-team{
+    background-color: var(--color-cloud);
+    
+}
+
+footer{
+    background-color: var(--color-navyblue);
+    color: var(--color-cornflower);
+    height: 310px;
+}
+
+footer .logo{
+    color: var(--color-cloud);
+}
+
+footer p{
+    width: 264px;
+    height: 72px;
+}
