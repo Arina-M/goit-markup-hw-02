@@ -1,113 +1,182 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    letter-spacing: 0.02em;
-    font-weight: 400;
+body {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  font-weight: 400;
 }
 
-:root{
-    --color-iris: rgba(77, 90, 229, 1);
-    --color-navyblue: rgba(46, 47, 66, 1);
-    --color-white: rgba(255, 255, 255, 1);
-    --color-cloud: rgba(244, 244, 253, 1);
-    --color-cornflower: rgba(231, 233, 252, 1);
+:root {
+  --color-iris: rgba(77, 90, 229, 1);
+  --color-navyblue: rgba(46, 47, 66, 1);
+  --color-white: rgba(255, 255, 255, 1);
+  --color-cloud: rgba(244, 244, 253, 1);
+  --color-cornflower: rgba(231, 233, 252, 1);
+  --color-slate: rgba(67, 68, 85, 1);
 }
 
-a{
-    text-decoration: none;
-    color: black;
+a {
+  text-decoration: none;
+  color: black;
 }
 
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
 
-h1{
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 60px;  
+h1 {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 60px;
 }
 
-h2{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 24px;  
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 24px;
 }
 
-h3{
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;  
+h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
 }
 
-.logo{
-    font-weight: 900;
+/* HEADER */
+.logo {
+  font-weight: 900;
 }
-.logo span{
-    color: var(--color-iris);
-}
-
-.menu{
-    font-weight: 600;
+.logo span {
+  color: var(--color-iris);
 }
 
-.contacts li :hover, .menu li :hover{
-    color: var(--color-iris);
+.menu-list-item {
+  font-weight: 600;
 }
 
-
-.hero{
-    background-color: var(--color-navyblue);
-    color: var(--color-white);
-    height: 603px;
-    text-align: center;
+.li :hover {
+  color: var(--color-iris);
 }
 
-.order-service-btn{
-    background-color: var(--color-iris);
-    border: none;
-    color: var(--color-white);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    width: 170px;
-    height: 51px;
-    border-radius: 4px;
-    font-weight: 600;
-    font-size: 16px;
-    letter-spacing: 0.04em;
-    cursor: pointer;
+/* HERO */
+.hero {
+  background-color: var(--color-navyblue);
+  color: var(--color-white);
+  height: 603px;
+  text-align: center;
 }
 
-.advantages p{
-    width: 264px;
-    height: 104px;
+.order-service {
+  background-color: var(--color-iris);
+  border: none;
+  color: var(--color-white);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  width: 170px;
+  height: 51px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  cursor: pointer;
 }
 
-.our-team{
-    background-color: var(--color-cloud);
-    
+/* ADVANTAGES */
+.advantages-list-item {
+  width: 264px;
+  height: 104px;
 }
 
-footer{
-    background-color: var(--color-navyblue);
-    color: var(--color-cornflower);
-    height: 310px;
+/* WHAT ARE WE DOING */
+.wawd-list-item img {
+  width: 360px;
+  height: 300px;
 }
 
-footer .logo{
-    color: var(--color-cloud);
+/* OUR TEAM */
+.our-team {
+  background-color: var(--color-cloud);
 }
 
-footer p{
-    width: 264px;
-    height: 72px;
+.our-team-worker-photo {
+  width: 264px;
+  height: 260px;
+}
+
+.our-team-list-item {
+  background-color: var(--color-white);
+  width: 264px;
+  height: 380px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16);
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  text-align: center;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.our-team-list-item p {
+  color: var(--color-slate);
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--color-navyblue);
+  color: var(--color-cornflower);
+  height: 310px;
+}
+
+footer .logo {
+  color: var(--color-cloud);
+}
+
+footer p {
+  width: 264px;
+  height: 72px;
+}
+
+/* PORTFOLIO */
+.filter-list-item button {
+  background-color: var(--color-cloud);
+  border: 1px solid;
+  border-color: var(--color-cornflower);
+  color: var(--color-iris);
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  border-radius: 4px;
+  padding: 8px, 16px, 8px, 16px;
+  gap: 10px;
+  height: 48px;
+}
+
+.filter-list-item :hover {
+  color: var(--color-white);
+  background-color: var(--color-iris);
+  cursor: pointer;
+}
+
+#all-btn {
+  width: 69px;
+}
+
+#web-site-btn {
+  width: 116px;
+}
+
+#app-btn {
+  width: 78px;
+}
+
+#design-btn {
+  width: 101px;
+}
+
+#marketing-btn {
+  width: 126px;
 }
