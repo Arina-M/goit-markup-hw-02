@@ -194,17 +194,17 @@ footer p {
 }
 
 /* articles */
-.article-list-item{
+.article-list-item {
   border: 1px solid;
   border-color: var(--color-cornflower);
   width: 360px;
   height: 420px;
 }
 
-.pa-category{
+.pa-category {
   color: var(--color-slate);
 }
 
-.article-info{
+.article-info {
   padding: 0px 16px;
 }
