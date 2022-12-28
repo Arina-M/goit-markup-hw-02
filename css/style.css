@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap");
 
 * {
   padding: 0;
@@ -10,6 +10,7 @@ body {
   color: black;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  line-height: 2;
   letter-spacing: 0.02em;
   font-weight: 400;
 }
@@ -35,24 +36,25 @@ li {
 h1 {
   font-weight: 700;
   font-size: 56px;
-  line-height: 60px;
+  line-height: 5;
 }
 
 h2 {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 36px;
-  line-height: 24px;
+  line-height: 3, 3;
 }
 
 h3 {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 20px;
-  line-height: 24px;
+  /* line-height: 2; */
 }
 
 /* HEADER */
 .logo {
-  font-weight: 900;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
 }
 .logo span {
   color: var(--color-iris);
@@ -88,10 +90,21 @@ h3 {
   cursor: pointer;
 }
 
+.order-service:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 /* ADVANTAGES */
+
 .advantages-list-item {
   width: 264px;
   height: 104px;
+}
+
+.advantages-list-item p {
+  width: 264px;
+  height: 72px;
 }
 
 /* WHAT ARE WE DOING */
@@ -150,9 +163,8 @@ footer p {
   font-size: 16px;
   letter-spacing: 0.04em;
   border-radius: 4px;
-  padding: 8px, 16px, 8px, 16px;
-  gap: 10px;
   height: 48px;
+  padding: 8px 16px;
 }
 
 .filter-list-item :hover {
@@ -179,4 +191,20 @@ footer p {
 
 #marketing-btn {
   width: 126px;
+}
+
+/* articles */
+.article-list-item{
+  border: 1px solid;
+  border-color: var(--color-cornflower);
+  width: 360px;
+  height: 420px;
+}
+
+.pa-category{
+  color: var(--color-slate);
+}
+
+.article-info{
+  padding: 0px 16px;
 }
