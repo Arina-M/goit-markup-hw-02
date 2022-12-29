@@ -7,12 +7,9 @@
 }
 
 body {
-  color: black;
+  color: var(--color-navyblue);
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  line-height: 2;
-  letter-spacing: 0.02em;
-  font-weight: 400;
+  background-color: var(--color-white);
 }
 
 :root {
@@ -26,45 +23,68 @@ body {
 
 a {
   text-decoration: none;
-  color: black;
 }
 
 li {
   list-style: none;
 }
 
-h1 {
+.caption-h1 {
   font-weight: 700;
   font-size: 56px;
-  line-height: 5;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
 }
 
-h2 {
-  font-weight: 600;
+.caption-h2 {
+  font-weight: 700;
   font-size: 36px;
-  line-height: 3, 3;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+ 
 }
 
-h3 {
-  font-weight: 600;
+.caption-h3 {
+  font-weight: 500;
   font-size: 20px;
-  /* line-height: 2; */
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+
+}
+
+.caption-navyblue{
+  color: var(--color-navyblue);
 }
 
 /* HEADER */
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  color: var(--color-navyblue);
 }
+
 .logo span {
   color: var(--color-iris);
 }
 
-.menu-list-item {
-  font-weight: 600;
+.menu-list-link, .contacts-list-link {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
 }
 
-.li :hover {
+.menu-list-link{
+  color: var(--color-navyblue);
+}
+
+.contacts-list-link{
+  color: var(--color-slate);
+}
+
+.menu-list-item :hover, .contacts-list-item :hover {
   color: var(--color-iris);
 }
 
@@ -77,6 +97,7 @@ h3 {
 }
 
 .order-service {
+  font-family: "Roboto", sans-serif;
   background-color: var(--color-iris);
   border: none;
   color: var(--color-white);
@@ -84,7 +105,7 @@ h3 {
   width: 170px;
   height: 51px;
   border-radius: 4px;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.04em;
   cursor: pointer;
@@ -96,66 +117,64 @@ h3 {
 }
 
 /* ADVANTAGES */
+.advantages-card-info{
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-slate);
+  letter-spacing: 0.02em;
+}
 
 .advantages-list-item {
   width: 264px;
-  height: 104px;
 }
 
-.advantages-list-item p {
-  width: 264px;
-  height: 72px;
-}
 
 /* WHAT ARE WE DOING */
-.wawd-list-item img {
-  width: 360px;
-  height: 300px;
-}
+
 
 /* OUR TEAM */
 .our-team {
   background-color: var(--color-cloud);
 }
 
-.our-team-worker-photo {
-  width: 264px;
-  height: 260px;
-}
 
 .our-team-list-item {
   background-color: var(--color-white);
   width: 264px;
-  height: 380px;
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
-  box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16);
-  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  /* box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08); */
+  /* box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16); */
+  /* box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08); */
   text-align: center;
   border-radius: 0px 0px 4px 4px;
 }
 
-.our-team-list-item p {
+.our-team-card-info {
   color: var(--color-slate);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 /* FOOTER */
-footer {
+.footer {
   background-color: var(--color-navyblue);
-  color: var(--color-cornflower);
-  height: 310px;
 }
 
-footer .logo {
+.footer .logo {
   color: var(--color-cloud);
 }
 
-footer p {
+.footer-info {
   width: 264px;
-  height: 72px;
+  color: var(--color-cornflower);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 /* PORTFOLIO */
-.filter-list-item button {
+.filter-button {
+  font-family: "Roboto", sans-serif;
   background-color: var(--color-cloud);
   border: 1px solid;
   border-color: var(--color-cornflower);
@@ -163,8 +182,8 @@ footer p {
   font-size: 16px;
   letter-spacing: 0.04em;
   border-radius: 4px;
-  height: 48px;
   padding: 8px 16px;
+  line-height: 1.5;
 }
 
 .filter-list-item :hover {
@@ -173,28 +192,10 @@ footer p {
   cursor: pointer;
 }
 
-#all-btn {
-  width: 69px;
-}
-
-#web-site-btn {
-  width: 116px;
-}
-
-#app-btn {
-  width: 78px;
-}
-
-#design-btn {
-  width: 101px;
-}
-
-#marketing-btn {
-  width: 126px;
-}
 
 /* articles */
 .article-list-item {
+  background-color: var(--color-white);
   border: 1px solid;
   border-color: var(--color-cornflower);
   width: 360px;
@@ -203,8 +204,15 @@ footer p {
 
 .pa-category {
   color: var(--color-slate);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .article-info {
   padding: 0px 16px;
+}
+
+.article-link{
+  cursor: pointer;
 }
