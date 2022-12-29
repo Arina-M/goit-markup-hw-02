@@ -41,7 +41,6 @@ li {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
- 
 }
 
 .caption-h3 {
@@ -49,11 +48,23 @@ li {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-
 }
 
-.caption-navyblue{
+.caption-navyblue {
   color: var(--color-navyblue);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 /* HEADER */
@@ -70,21 +81,25 @@ li {
   color: var(--color-iris);
 }
 
-.menu-list-link, .contacts-list-link {
+.menu-list-link,
+.contacts-list-link {
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.5;
+  font-size: 16px;
 }
 
-.menu-list-link{
+.menu-list-link {
   color: var(--color-navyblue);
 }
 
-.contacts-list-link{
+.contacts-list-link {
   color: var(--color-slate);
 }
 
-.menu-list-item :hover, .contacts-list-item :hover {
+.menu-list-item :hover,
+.contacts-list-item :hover .menu-list-item :focus,
+.contacts-list-item :focus {
   color: var(--color-iris);
 }
 
@@ -92,7 +107,6 @@ li {
 .hero {
   background-color: var(--color-navyblue);
   color: var(--color-white);
-  height: 603px;
   text-align: center;
 }
 
@@ -103,7 +117,6 @@ li {
   color: var(--color-white);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   width: 170px;
-  height: 51px;
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
@@ -111,13 +124,14 @@ li {
   cursor: pointer;
 }
 
-.order-service:hover {
+.order-service:hover,
+.order-service:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 /* ADVANTAGES */
-.advantages-card-info{
+.advantages-card-info {
   font-size: 16px;
   line-height: 1.5;
   color: var(--color-slate);
@@ -128,22 +142,16 @@ li {
   width: 264px;
 }
 
-
 /* WHAT ARE WE DOING */
-
 
 /* OUR TEAM */
 .our-team {
   background-color: var(--color-cloud);
 }
 
-
 .our-team-list-item {
   background-color: var(--color-white);
   width: 264px;
-  /* box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08); */
-  /* box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16); */
-  /* box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08); */
   text-align: center;
   border-radius: 0px 0px 4px 4px;
 }
@@ -186,12 +194,12 @@ li {
   line-height: 1.5;
 }
 
-.filter-list-item :hover {
+.filter-list-item :hover,
+.filter-list-item:focus {
   color: var(--color-white);
   background-color: var(--color-iris);
   cursor: pointer;
 }
-
 
 /* articles */
 .article-list-item {
@@ -199,7 +207,6 @@ li {
   border: 1px solid;
   border-color: var(--color-cornflower);
   width: 360px;
-  height: 420px;
 }
 
 .pa-category {
@@ -213,6 +220,6 @@ li {
   padding: 0px 16px;
 }
 
-.article-link{
+.article-link {
   cursor: pointer;
 }
